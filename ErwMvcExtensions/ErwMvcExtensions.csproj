@@ -99,6 +99,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en-GB.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en-US.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.ru-RU.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.ru.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en-GB.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en-US.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.ru-RU.resources" />
+    <EmbeddedResource Include="obj\Debug\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.ru.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en-GB.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en-US.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.en.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.ru-RU.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.ru.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en-GB.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en-US.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.en.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.ru-RU.resources" />
+    <EmbeddedResource Include="obj\Release\ErwMvcExtensions.ViewModels.Resources.PropertyDisplayNameResources.ru.resources" />
     <EmbeddedResource Include="ValidationAttributes\Resources\ValidationAttributeErrorMessageResources.en-GB.resx" />
     <EmbeddedResource Include="ValidationAttributes\Resources\ValidationAttributeErrorMessageResources.en-US.resx" />
     <EmbeddedResource Include="ValidationAttributes\Resources\ValidationAttributeErrorMessageResources.en.resx" />
@@ -119,16 +143,86 @@
     <EmbeddedResource Include="ViewModels\Resources\PropertyDisplayNameResources.ru.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\en-GB\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Debug\en-US\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Debug\en\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Debug\ErwMvcExtensions.dll" />
+    <Content Include="bin\Debug\ErwMvcExtensions.pdb" />
+    <Content Include="bin\Debug\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Debug\ru-RU\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Debug\ru\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Debug\System.Web.Helpers.dll" />
+    <Content Include="bin\Debug\System.Web.Helpers.xml" />
+    <Content Include="bin\Debug\System.Web.Mvc.dll" />
+    <Content Include="bin\Debug\System.Web.Mvc.xml" />
+    <Content Include="bin\Debug\System.Web.Razor.dll" />
+    <Content Include="bin\Debug\System.Web.Razor.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.xml" />
+    <Content Include="bin\Release\en-GB\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Release\en-US\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Release\en\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Release\ErwMvcExtensions.dll" />
+    <Content Include="bin\Release\ErwMvcExtensions.pdb" />
+    <Content Include="bin\Release\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Release\ru-RU\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Release\ru\ErwMvcExtensions.resources.dll" />
+    <Content Include="bin\Release\System.Web.Helpers.dll" />
+    <Content Include="bin\Release\System.Web.Helpers.xml" />
+    <Content Include="bin\Release\System.Web.Mvc.dll" />
+    <Content Include="bin\Release\System.Web.Mvc.xml" />
+    <Content Include="bin\Release\System.Web.Razor.dll" />
+    <Content Include="bin\Release\System.Web.Razor.xml" />
+    <Content Include="bin\Release\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\Release\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\Release\System.Web.WebPages.dll" />
+    <Content Include="bin\Release\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\Release\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\Release\System.Web.WebPages.xml" />
     <Content Include="HtmlHelpers\Scripts\erwscript.ui.js" />
     <Content Include="HtmlHelpers\Scripts\erwscript.ui.min.js" />
     <Content Include="HtmlHelpers\Styles\erwstyle.ui.css" />
     <Content Include="HtmlHelpers\Styles\erwstyle.ui.min.css" />
+    <Content Include="obj\Debug\en-GB\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Debug\en-US\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Debug\en\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Debug\ErwMvcExtensions.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ErwMvcExtensions.dll" />
+    <Content Include="obj\Debug\ErwMvcExtensions.pdb" />
+    <Content Include="obj\Debug\ru-RU\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Debug\ru\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Debug\TempPE\ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\ViewModels.Resources.PropertyDisplayNameResources.Designer.cs.dll" />
+    <Content Include="obj\Release\en-GB\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Release\en-US\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Release\en\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Release\ErwMvcExtensions.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\ErwMvcExtensions.dll" />
+    <Content Include="obj\Release\ErwMvcExtensions.pdb" />
+    <Content Include="obj\Release\ru-RU\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Release\ru\ErwMvcExtensions.resources.dll" />
+    <Content Include="obj\Release\TempPE\ValidationAttributes.Resources.ValidationAttributeErrorMessageResources.Designer.cs.dll" />
+    <Content Include="obj\Release\TempPE\ViewModels.Resources.PropertyDisplayNameResources.Designer.cs.dll" />
     <Content Include="ValidationAttributes\Scripts\erwscript.validate.unobtrusive.js" />
     <Content Include="ValidationAttributes\Scripts\erwscript.validate.unobtrusive.min.js" />
     <Content Include="ValidationAttributes\Styles\erwstyle.validate.css" />
     <Content Include="ValidationAttributes\Styles\erwstyle.validate.min.css" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ErwMvcExtensions.csproj.CopyComplete" />
+    <None Include="obj\Debug\ErwMvcExtensions.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\ErwMvcExtensions.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\build.force" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ErwMvcExtensions.csproj.CopyComplete" />
+    <None Include="obj\Release\ErwMvcExtensions.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\ErwMvcExtensions.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
