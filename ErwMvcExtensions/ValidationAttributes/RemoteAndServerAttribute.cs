@@ -4,11 +4,8 @@ using ErwMvcExtensions.ValidationAttributes.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Reflection;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -43,7 +40,7 @@ namespace ErwMvcExtensions.ValidationAttributes
         }
 
         public RemoteAndServerAttribute(string area, string controller, string action, HttpMethodType httpMethodType)
-            : this(new { area = area, controller = controller, action = action}, httpMethodType)
+            : this(new { area = area, controller = controller, action = action }, httpMethodType)
         {
         }
 
@@ -106,7 +103,7 @@ namespace ErwMvcExtensions.ValidationAttributes
                 if (!(bool)actionResult.Data)
                 {
                     return new ValidationResult(this.FormatErrorMessage(currentPropertyDisplayName));
-                }                
+                }
             }
 
             return ValidationResult.Success;

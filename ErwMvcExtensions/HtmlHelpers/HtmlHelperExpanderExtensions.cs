@@ -1,11 +1,6 @@
 ﻿using ErwMvcExtensions.Html;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
-using System.Web.Mvc.Html;
 using System.Web.Routing;
 
 namespace ErwMvcExtensions.HtmlHelpers
@@ -14,145 +9,145 @@ namespace ErwMvcExtensions.HtmlHelpers
     {
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper)
         {
-            return BeginExpander(htmlHelper, 
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 ExpanderDisplayMode.Collapsed,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 ExpanderDefaultStyles.Enabled,
+                                 ExpanderDisplayMode.Collapsed,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, ExpanderDisplayMode expanderDisplayMode)
         {
-            return BeginExpander(htmlHelper, 
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 expanderDisplayMode, 
+            return BeginExpander(htmlHelper,
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 expanderDisplayMode,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, object htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 ExpanderDisplayMode.Collapsed,
                                  HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, IDictionary<string, object> htmlAttributes)
         {
             return BeginExpander(htmlHelper,
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 ExpanderDisplayMode.Collapsed, 
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 ExpanderDisplayMode.Collapsed,
                                  htmlAttributes);
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 expanderDefaultStyles, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 expanderDefaultStyles,
+                                 ExpanderDisplayMode.Collapsed,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDisplayMode expanderDisplayMode)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 expanderDisplayMode, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 ExpanderDefaultStyles.Enabled,
+                                 expanderDisplayMode,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, object htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 ExpanderDefaultStyles.Enabled,
+                                 ExpanderDisplayMode.Collapsed,
                                  HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, IDictionary<string, object> htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 ExpanderDefaultStyles.Enabled, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 ExpanderDefaultStyles.Enabled,
                                  ExpanderDisplayMode.Collapsed,
                                  htmlAttributes);
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, ExpanderDisplayMode expanderDisplayMode, object htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 expanderDisplayMode, 
+            return BeginExpander(htmlHelper,
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 expanderDisplayMode,
                                  HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, ExpanderDisplayMode expanderDisplayMode, IDictionary<string, object> htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 null, 
-                                 ExpanderDefaultStyles.Enabled, 
-                                 expanderDisplayMode, 
+            return BeginExpander(htmlHelper,
+                                 null,
+                                 ExpanderDefaultStyles.Enabled,
+                                 expanderDisplayMode,
                                  htmlAttributes);
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, ExpanderDisplayMode expanderDisplayMode)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 expanderDefaultStyles, 
-                                 expanderDisplayMode, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 expanderDefaultStyles,
+                                 expanderDisplayMode,
                                  new RouteValueDictionary());
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, object htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 expanderDefaultStyles, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 expanderDefaultStyles,
+                                 ExpanderDisplayMode.Collapsed,
                                  HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, IDictionary<string, object> htmlAttributes)
         {
-            return BeginExpander(htmlHelper, 
-                                 titleInnerHtml, 
-                                 expanderDefaultStyles, 
-                                 ExpanderDisplayMode.Collapsed, 
+            return BeginExpander(htmlHelper,
+                                 titleInnerHtml,
+                                 expanderDefaultStyles,
+                                 ExpanderDisplayMode.Collapsed,
                                  htmlAttributes);
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, ExpanderDisplayMode expanderDisplayMode, object htmlAttributes)
         {
-            return ErwExpanderHelper(htmlHelper, 
-                                     titleInnerHtml, 
+            return ErwExpanderHelper(htmlHelper,
+                                     titleInnerHtml,
                                      expanderDefaultStyles,
-                                     expanderDisplayMode, 
+                                     expanderDisplayMode,
                                      HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
         }
 
         public static ErwExpander BeginExpander(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, ExpanderDisplayMode expanderDisplayMode, IDictionary<string, object> htmlAttributes)
         {
-            return ErwExpanderHelper(htmlHelper, 
-                                     titleInnerHtml, 
-                                     expanderDefaultStyles, 
-                                     expanderDisplayMode, 
+            return ErwExpanderHelper(htmlHelper,
+                                     titleInnerHtml,
+                                     expanderDefaultStyles,
+                                     expanderDisplayMode,
                                      htmlAttributes);
         }
 
@@ -167,7 +162,7 @@ namespace ErwMvcExtensions.HtmlHelpers
             viewContext.Writer.Write("</div>");
         }
 
-        private static ErwExpander ErwExpanderHelper(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles,  ExpanderDisplayMode expanderDisplayMode, IDictionary<string, object> htmlAttributes)
+        private static ErwExpander ErwExpanderHelper(this HtmlHelper htmlHelper, string titleInnerHtml, ExpanderDefaultStyles expanderDefaultStyles, ExpanderDisplayMode expanderDisplayMode, IDictionary<string, object> htmlAttributes)
         {
             TagBuilder mainExpanderTag = new TagBuilder("div");
             htmlAttributes.Add("data-ui-type", "expander");
@@ -228,7 +223,7 @@ namespace ErwMvcExtensions.HtmlHelpers
         Expanded = 1
     }
 
-    public enum ExpanderDefaultStyles: int
+    public enum ExpanderDefaultStyles : int
     {
         Enabled = 0,
         Disabled = 1

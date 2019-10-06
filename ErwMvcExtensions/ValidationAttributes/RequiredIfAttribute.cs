@@ -7,8 +7,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -22,7 +20,7 @@ namespace ErwMvcExtensions.ValidationAttributes
         private CompareMethod compareMethod;
 
         public RequiredIfAttribute(string propertyToCheck, object propertyToCheckValue)
-            :this(propertyToCheck, propertyToCheckValue, CompareMethod.EqualsTo)
+            : this(propertyToCheck, propertyToCheckValue, CompareMethod.EqualsTo)
         {
         }
 

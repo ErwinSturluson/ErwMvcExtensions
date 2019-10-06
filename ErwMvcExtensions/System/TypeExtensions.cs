@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ErwMvcExtensions.System
 {
@@ -82,7 +78,7 @@ namespace ErwMvcExtensions.System
             catch (Exception)
             {
                 return parsedValue;
-            }           
+            }
 
             return parsedValue;
         }

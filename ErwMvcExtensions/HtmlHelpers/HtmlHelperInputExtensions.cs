@@ -1,10 +1,7 @@
 ﻿using ErwMvcExtensions.Html;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -13,17 +10,17 @@ namespace ErwMvcExtensions.HtmlHelpers
 {
     internal static class HtmlHelperInputExtensions
     {
-        internal static MvcHtmlString InputHelper(HtmlHelper htmlHelper, 
-                                                  ErwInputType inputType, 
-                                                  ModelMetadata metadata, 
-                                                  string name, 
-                                                  object value, 
-                                                  bool useViewData, 
-                                                  bool isChecked, 
-                                                  bool setId, 
-                                                  bool isExplicitValue, 
-                                                  string format, 
-                                                  IDictionary<string, object> htmlAttributes, 
+        internal static MvcHtmlString InputHelper(HtmlHelper htmlHelper,
+                                                  ErwInputType inputType,
+                                                  ModelMetadata metadata,
+                                                  string name,
+                                                  object value,
+                                                  bool useViewData,
+                                                  bool isChecked,
+                                                  bool setId,
+                                                  bool isExplicitValue,
+                                                  string format,
+                                                  IDictionary<string, object> htmlAttributes,
                                                   RouteValueDictionary routeValues,
                                                   HttpMethodType httpMethodType,
                                                   Func<object, object> markupGenerator)
@@ -109,14 +106,14 @@ namespace ErwMvcExtensions.HtmlHelpers
                         TagBuilder listAutoCompleteTag = new TagBuilder("div");
                         listAutoCompleteTag.MergeAttribute("data-ui-type", "autocomplete-list");
 
-                        tagBuilder = markupGenerator.Invoke(new TagBuilder[] { 
-                                                            mainAutoCompleteTag, 
-                                                            inputContainerAutoCompleteTag, 
+                        tagBuilder = markupGenerator.Invoke(new TagBuilder[] {
+                                                            mainAutoCompleteTag,
+                                                            inputContainerAutoCompleteTag,
                                                             listAutoCompleteTag }) as TagBuilder;
 
                         tagRenderMode = TagRenderMode.Normal;
                     }
-                    
+
                     break;
                 default:
                     string attemptedValue = (string)htmlHelper.GetModelStateValue(fullName, typeof(string));

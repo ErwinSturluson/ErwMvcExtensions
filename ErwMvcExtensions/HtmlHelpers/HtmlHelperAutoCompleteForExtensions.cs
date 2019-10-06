@@ -1,10 +1,7 @@
 ﻿using ErwMvcExtensions.Html;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -71,7 +68,7 @@ namespace ErwMvcExtensions.HtmlHelpers
                                          httpMethodType,
                                          null);
         }
-        
+
         public static MvcHtmlString AutoCompleteFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TProperty>> expression, RouteValueDictionary routeValues, Func<object, object> markupGenerator)
         {
             ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
