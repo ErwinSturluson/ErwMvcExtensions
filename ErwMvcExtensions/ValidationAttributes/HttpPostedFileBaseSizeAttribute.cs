@@ -74,7 +74,7 @@ namespace ErwMvcExtensions.ValidationAttributes
             }
             catch (Exception)
             {
-                formattingPattern = "The size of the uploaded files for the {0} field should be in the range from {1} to {2} {3}.";
+                formattingPattern = "The size of the uploaded files for the {0} should be in the range from {1} to {2} {3}.";
             }
 
             string formattedErrorMessage = string.Format(formattingPattern, name, this.minSize, this.maxSize, this.GetSizeUnitString(this.sizeUnit));

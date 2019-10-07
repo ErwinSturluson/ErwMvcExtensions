@@ -62,11 +62,74 @@ namespace ErwMvcExtensions.ValidationAttributes.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} available only if  {1} {2} {3}..
+        /// </summary>
+        public static string AvailableIf {
+            get {
+                return ResourceManager.GetString("AvailableIf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} must be same as {1}..
+        /// </summary>
+        public static string EqualsToMultiple {
+            get {
+                return ResourceManager.GetString("EqualsToMultiple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of uploaded files for the {0} should be in the range from {1} to {2}..
+        /// </summary>
+        public static string HttpPostedFileBaseCount {
+            get {
+                return ResourceManager.GetString("HttpPostedFileBaseCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valid file extensions for the {0} is {1}..
+        /// </summary>
+        public static string HttpPostedFileBaseExtensions {
+            get {
+                return ResourceManager.GetString("HttpPostedFileBaseExtensions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The size of the uploaded files for the {0} should be in the range from {1} to {2} {3}..
+        /// </summary>
+        public static string HttpPostedFileBaseSize {
+            get {
+                return ResourceManager.GetString("HttpPostedFileBaseSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} must be different from {1}..
         /// </summary>
         public static string NotEqualsTo {
             get {
                 return ResourceManager.GetString("NotEqualsTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value is not valid for the {0}..
+        /// </summary>
+        public static string RemoteAndServer {
+            get {
+                return ResourceManager.GetString("RemoteAndServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is required if {1} {2} {3}..
+        /// </summary>
+        public static string RequiredIf {
+            get {
+                return ResourceManager.GetString("RequiredIf", resourceCulture);
             }
         }
     }

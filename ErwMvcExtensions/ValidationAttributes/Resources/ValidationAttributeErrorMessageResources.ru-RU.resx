@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AvailableIf" xml:space="preserve">
+    <value>Поле {0} доступно только если {1} {2} {3}.</value>
+  </data>
+  <data name="EqualsToMultiple" xml:space="preserve">
+    <value>Поле {0} должно иметь одинаковые значения с {1}.</value>
+  </data>
+  <data name="HttpPostedFileBaseCount" xml:space="preserve">
+    <value>Количество загружаемых файлов для поля {0} должно быть не менее {1} и не более {2}.</value>
+  </data>
+  <data name="HttpPostedFileBaseExtensions" xml:space="preserve">
+    <value>Доступные для поля {0} расширения файлов: {1}.</value>
+  </data>
+  <data name="HttpPostedFileBaseSize" xml:space="preserve">
+    <value>Размер загружаемых файлов для поля {0} должен находиться в диапазоне от {1} до {2} {3}.</value>
+  </data>
   <data name="NotEqualsTo" xml:space="preserve">
     <value>Поле {0} не должно иметь одинаковые значения с {1}.</value>
+  </data>
+  <data name="RemoteAndServer" xml:space="preserve">
+    <value>Это значение недействительно для поля {0}.</value>
+  </data>
+  <data name="RequiredIf" xml:space="preserve">
+    <value>Поле {0} обязательно для заполнения если {1} {2} {3}.</value>
   </data>
 </root>

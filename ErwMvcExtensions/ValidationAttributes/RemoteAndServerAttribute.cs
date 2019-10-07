@@ -59,12 +59,12 @@ namespace ErwMvcExtensions.ValidationAttributes
                 if (this.ErrorMessageResourceType == null)
                 {
                     resourceManager = new ResourceManager(typeof(ValidationAttributeErrorMessageResources));
-                    formattingPattern = resourceManager.GetString("RemoteAndServerAttribute", CultureInfoExtensions.GetCultureFromHttp(HttpContext.Current.Request));
+                    formattingPattern = resourceManager.GetString("RemoteAndServer", CultureInfoExtensions.GetCultureFromHttp(HttpContext.Current.Request));
                 }
                 else if (string.IsNullOrEmpty(this.ErrorMessageResourceName))
                 {
                     resourceManager = new ResourceManager(this.ErrorMessageResourceType);
-                    formattingPattern = resourceManager.GetString("RemoteAndServerAttribute", CultureInfoExtensions.GetCultureFromHttp(HttpContext.Current.Request));
+                    formattingPattern = resourceManager.GetString("RemoteAndServer", CultureInfoExtensions.GetCultureFromHttp(HttpContext.Current.Request));
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace ErwMvcExtensions.ValidationAttributes
             }
             catch (Exception)
             {
-                formattingPattern = "This value is not valid for the {0} field.";
+                formattingPattern = "This value is not valid for the {0}.";
             }
 
             string formattedErrorMessage = string.Format(formattingPattern, name);

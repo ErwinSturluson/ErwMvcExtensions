@@ -61,7 +61,7 @@ namespace ErwMvcExtensions.ValidationAttributes
             }
             catch (Exception)
             {
-                formattingPattern = "The number of downloaded files for the {0} field should be in the range from {1} to {2}.";
+                formattingPattern = "The number of downloaded files for the {0} should be in the range from {1} to {2}.";
             }
 
             string formattedErrorMessage = string.Format(formattingPattern, name, this.minCount, this.maxCount);

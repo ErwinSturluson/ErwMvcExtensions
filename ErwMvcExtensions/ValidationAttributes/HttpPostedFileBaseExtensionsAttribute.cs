@@ -60,7 +60,7 @@ namespace ErwMvcExtensions.ValidationAttributes
             }
             catch (Exception)
             {
-                formattingPattern = "Valid extensions for the {0} field: {1}.";
+                formattingPattern = "Valid extensions for the {0} is {1}.";
             }
 
 

@@ -67,7 +67,7 @@ namespace ErwMvcExtensions.ValidationAttributes
             }
             catch (Exception)
             {
-                formattingPattern = "Field {0} is required if field {1} {2} {3}.";
+                formattingPattern = "Field {0} is required if {1} {2} {3}.";
             }
 
             string currentPropertyDisplayName = propertiesDisplayNames.First();
