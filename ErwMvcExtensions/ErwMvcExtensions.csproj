@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionResults\XmlResult.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="HtmlHelpers\HtmlHelperAutoCompleteForExtensions.cs" />
     <Compile Include="HtmlHelpers\HtmlHelperExpanderExtensions.cs" />
