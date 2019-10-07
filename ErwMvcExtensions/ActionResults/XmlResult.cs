@@ -11,7 +11,8 @@ namespace ErwMvcExtensions.ActionResults
         private XmlSerializer serializer;
         private string xmlContent;
 
-        public XmlResult(object serializableObject) : base()
+        public XmlResult(object serializableObject)
+            : base()
         {
             this.serializableObject = serializableObject;
             this.serializer = new XmlSerializer(this.serializableObject.GetType());
