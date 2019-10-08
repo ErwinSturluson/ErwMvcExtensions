@@ -185,6 +185,10 @@ namespace ErwMvcExtensions.HtmlHelpers
 
                     TagBuilder arrowTitleExpaderTag = new TagBuilder("span");
                     arrowTitleExpaderTag.AddCssClass("erw-arrow");
+                    if (expanderDisplayMode == ExpanderDisplayMode.Expanded)
+                    {
+                        arrowTitleExpaderTag.AddCssClass("active");
+                    }
                     arrowTitleExpaderTag.InnerHtml = new TagBuilder("span").ToString(TagRenderMode.Normal) + new TagBuilder("span").ToString(TagRenderMode.Normal);
 
                     titlePositionExpanderTag.InnerHtml = arrowTitleExpaderTag.ToString(TagRenderMode.Normal) + titleInnerHtml ?? "Expander";
