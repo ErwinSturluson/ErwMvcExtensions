@@ -1,4 +1,4 @@
-﻿(function($) {
+﻿(function ($) {
 
     function setExpanders($) {
         let expanderElements = $("div[data-ui-type='expander']");
@@ -6,7 +6,7 @@
         for (let i = 0; i < expanderElements.length; i++) {
             let expanderTitles = $(expanderElements[i]).children("div[data-ui-type='expander-title']");
 
-            $(expanderTitles).first().click(function() {
+            $(expanderTitles).first().click(function () {
                 $(this).parent("div[data-ui-type='expander']").toggleClass('expanded');
                 $(this).find(".erw-arrow").first().toggleClass('active');
                 $(this).parent("div[data-ui-type='expander']").children("div[data-ui-type='expander-content']").first().toggle();
@@ -26,7 +26,7 @@
                 .children("div[data-ui-type='autocomplete-input']")
                 .find("input[type='text']").first();
 
-            $(autoCompleteInput).click(function() {
+            $(autoCompleteInput).click(function () {
 
                 let list = $(this).parents("div[data-ui-type='autocomplete']")
                     .find("div[data-ui-type='autocomplete-list']").first();
@@ -38,18 +38,18 @@
                     url: actionUrl,
                     type: httpMethod,
                     data: { comparePattern: $(this).val() },
-                    success: function(data) {
+                    success: function (data) {
                         $(list).empty();
 
-                        if (data.list.length === 0) {
+                        if (data.length === 0) {
                             let element = $('<div></div>').text('No matches.');
                             $(list).append($(element));
 
                         }
                         else {
-                            for (let j = 0; j < data.list.length; j++) {
-                                let element = $("<div class='erw-autocomplete-list-item'></div>").text(data.list[j]);
-                                $(element).click(function() {
+                            for (let j = 0; j < data.length; j++) {
+                                let element = $("<div class='erw-autocomplete-list-item'></div>").text(data[j]);
+                                $(element).click(function () {
                                     console.log('click');
                                     let input = $(this).parents("div[data-ui-type='autocomplete']")
                                         .children("div[data-ui-type='autocomplete-input']").first()
@@ -77,7 +77,7 @@
                 });
             });
 
-            $(autoCompleteInput).blur(function() {
+            $(autoCompleteInput).blur(function () {
                 let autocompleteList = $(this).parents("div[data-ui-type='autocomplete']")
                     .children("div[data-ui-type='autocomplete-list']").first();
 
@@ -90,7 +90,7 @@
                 }
             });
 
-            $(autoCompleteInput).on('keyup', function(e) {
+            $(autoCompleteInput).on('keyup', function (e) {
                 if (e.keyCode < 8) {
                     return;
                 }
@@ -117,17 +117,17 @@
                     url: actionUrl,
                     type: httpMethod,
                     data: { comparePattern: $(this).val() },
-                    success: function(data) {
+                    success: function (data) {
                         $(autocompleteList).empty();
 
-                        if (data.list.length === 0) {
+                        if (data.length === 0) {
                             let element = $('<div></div>').text('No matches.');
                             $(autocompleteList).append($(element));
                         }
                         else {
-                            for (let j = 0; j < data.list.length; j++) {
-                                let element = $("<div class='erw-autocomplete-list-item'></div>").text(data.list[j]);
-                                $(element).click(function() {
+                            for (let j = 0; j < data.length; j++) {
+                                let element = $("<div class='erw-autocomplete-list-item'></div>").text(data[j]);
+                                $(element).click(function () {
                                     console.log('click');
 
                                     let input = $(this).parents("div[data-ui-type='autocomplete']")
@@ -156,7 +156,7 @@
                 });
             });
 
-            $(autoCompleteInput).on('keydown', function(e) {
+            $(autoCompleteInput).on('keydown', function (e) {
 
                 let autocompleteList = $(this).parents("div[data-ui-type='autocomplete']")
                     .find("div[data-ui-type='autocomplete-list']").first();
@@ -196,7 +196,7 @@
                             let caretElement = $(this);
                             let caretPosition = $(this).val().length * 2;
 
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 $(caretElement).get(0).setSelectionRange(caretPosition, caretPosition);
                             }, 1);
 
