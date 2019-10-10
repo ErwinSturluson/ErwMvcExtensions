@@ -25,7 +25,7 @@ namespace ErwMvcExtensions.ValueProviders
         {
             bool hasPrefix = false;
 
-            Type prefixType = this.GetValueTypeByPrefix(prefix);
+            Type prefixType = this.GetValueTypeByPrefix();
 
             valueProviderResult = this.GetValueByType(prefixType);
 
@@ -47,11 +47,13 @@ namespace ErwMvcExtensions.ValueProviders
             return null;
         }
 
-        private Type GetValueTypeByPrefix(string prefix)
+        private Type GetValueTypeByPrefix()
         {
-            Type valueType = typeof(object);
+            Type valueType = null;
+
             MethodInfo[] actionMethods = this.controllerContext.Controller.GetType().GetMethods()
                 .Where(m => !m.Name.StartsWith("get_") && !m.Name.StartsWith("set_")).ToArray();
+
             string actionName = this.controllerContext.RequestContext.RouteData.Values["action"].ToString();
 
             foreach (MethodInfo actionMethod in actionMethods)
@@ -73,7 +75,7 @@ namespace ErwMvcExtensions.ValueProviders
         {
             ValueProviderResult valueProviderResult = null;
 
-            if (!valueType.IsPrimitive && valueType.FullName != typeof(string).FullName)
+            if (valueType == null || !valueType.IsPrimitive && valueType.FullName != typeof(string).FullName)
             {
                 return valueProviderResult;
             }
@@ -105,11 +107,9 @@ namespace ErwMvcExtensions.ValueProviders
                 .Select(c => request.Cookies[c.ToString()].Value).ToList()
                 : null);
 
-            object value;
-
             foreach (IEnumerable source in dataSources)
             {
-                if (this.TrySetValueByType(out value, valueType, source))
+                if (this.TrySetValueByType(out object value, valueType, source))
                 {
                     return new ValueProviderResult(value, value.ToString(), CultureInfo.CurrentCulture);
                 }
