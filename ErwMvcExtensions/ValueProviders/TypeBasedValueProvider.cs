@@ -54,8 +54,6 @@ namespace ErwMvcExtensions.ValueProviders
                 .Where(m => !m.Name.StartsWith("get_") && !m.Name.StartsWith("set_")).ToArray();
             string actionName = this.controllerContext.RequestContext.RouteData.Values["action"].ToString();
 
-            var collTest = actionMethods.Select(a => a.Name);
-
             foreach (MethodInfo actionMethod in actionMethods)
             {
                 string actionNameToCompare = actionName.ToLower();
